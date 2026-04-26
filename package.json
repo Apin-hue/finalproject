@@ -1,0 +1,29 @@
+{
+  "name": "diadoek-restaurant-system",
+  "version": "1.0.0",
+  "description": "Sistem Manajemen Rumah Makan Diadoek dengan Testing Otomatis dan CI/CD",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest --coverage --forceExit",
+    "test:unit": "jest tests/unit --coverage",
+    "test:integration": "jest tests/integration --forceExit",
+    "test:watch": "jest --watch"
+  },
+  "keywords": ["restaurant", "management", "testing", "ci-cd"],
+  "author": "Student",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "dotenv": "^16.0.3",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3",
+    "nodemon": "^3.0.1"
+  }
+}
